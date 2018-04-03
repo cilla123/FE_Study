@@ -18,6 +18,7 @@ happy-weapp init <项目名>
 
 ## 四、模板的目录结构
 
+![目录结构](https://github.com/cilla123/FE_Study/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/assets/happy-weapp-template-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png?raw=true)
 
 ## 五、组件写法
 
@@ -271,6 +272,6 @@ Component({
 
 ## 五、运行结果
 
-
+![运行结果](https://github.com/cilla123/FE_Study/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/assets/happy-weapp-template-dist.png?raw=true)
 
 
