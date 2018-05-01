@@ -26,7 +26,9 @@
 
 ## 三、基本选择器语法
 
+![基本选择器语法](https://github.com/cilla123/FE_Study/blob/master/css/%E5%9B%BE%E8%A7%A3css3/image/%E5%9F%BA%E6%9C%AC%E9%80%89%E6%8B%A9%E5%99%A8.png?raw=true)
 
+## 四、层次选择器语法
 
 
 
