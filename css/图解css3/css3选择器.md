@@ -22,3 +22,24 @@
 - 4.UI元素状态伪类选择器
 - 5.结构伪类选择器和否定伪类选择器
 
+![css选择器](https://github.com/cilla123/FE_Study/blob/master/css/%E5%9B%BE%E8%A7%A3css3/image/css3%E9%80%89%E6%8B%A9%E5%99%A8%E5%88%86%E7%B1%BB.png?raw=true)
+
+## 三、基本选择器语法
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
