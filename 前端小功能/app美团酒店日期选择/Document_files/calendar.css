@@ -1,0 +1,142 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+.calendar{
+	display: none;
+	position: fixed;
+	width: 100%;
+	/* z-index: 999999999;
+	top: 0; */
+	overflow: auto;
+	height: 100%;
+	background: #fff;
+	font-family: Tahoma,"Lucida Grande",Verdana,"Microsoft YaHei",hei;
+}
+.firstSelect{
+	width:100%;
+	background:#fff;
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	overflow:scroll;
+	display:none;
+}
+body td{
+	text-align:center;
+	height:40px;
+	}
+.dateZone{
+	width:100%;
+	margin:auto;
+	background:#ffffff;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+	color:#666;
+	margin-top: 50px;
+	position: fixed;
+	z-index:9999;
+}
+.dateZone td{
+	background:#ffffff;
+	height:45px;
+	line-height: 45px;
+}
+.tbody {
+	margin-top: 97px;
+}
+.tbody td{
+	background:#fff;
+	color: #555;
+}
+.dateZone td{
+	width:14.2%;
+	font-size: 14px;
+}
+.dateZone .colo{
+	color:#fa967f;
+}
+.dateTable{
+	width:99.4%;
+	margin:auto;
+	border-bottom:1px solid #ddd;
+}
+.tbody .ny1{
+	width:100%;
+	text-align:center;
+	padding:5px 0;
+	color: #555;
+	background-color: #FAFAFA;
+	border-bottom:1px solid #ddd;
+	font-size: 15px;    
+	line-height: 28px;
+}
+.dateTable td{
+	width:14.2%;
+	font-size: 14px;
+}
+.dateTable .rz{
+	font-size:14px;
+}
+.datTip{
+	background:rgba(0,153,255,0.8);
+	width:40%;
+	position:fixed;
+	bottom:2px;
+	left:30%;
+}
+.datTip p{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	color:#fff;
+	padding:3px 0;
+	font-size:14px;
+	}
+.rz{
+	position:relative;
+	/* display: none; */
+	}
+.hover{
+	font-size:14px;
+	display:inline-block;
+	width:60%;
+	background:#FF3;
+	/* display: none; */
+	color:red;
+	text-align:center;
+	border-radius:5px;
+	}
+td{
+	border-radius:2px;
+	}
+/* section{
+	margin:10px;
+	padding:5px;
+	} */
+@media only screen and (min-width:400px){
+	body td{
+		text-align:center;
+		height:47px;
+	}
+}
+@media only screen and (max-width:320px){
+	body{
+		font-size:14px;
+	}
+	.dateTable .rz{
+		font-size:12px;
+	}
+	.datTip p{
+		font-size:12px;
+	}
+	.hover{
+		font-size:12px;
+	}
+	body td{
+		text-align:center;
+		height:35px;
+	}
+}
