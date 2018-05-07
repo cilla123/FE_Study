@@ -23,7 +23,30 @@ API 之所以叫 API 而不是叫网站的原因，其实是首先API请求使�
 
 **DELETE**用于删除一个对象。例如，如果我们向 http://myapi.com/user/23 发出一个 DELETE 请求，就会删除 ID 号是 23 的用户。DELETE 方法在公共 API 里面不常用，它们主要用于创建信息，不能随便让一个用户去删掉数据库的信息。但是，和 PUT 方法一样，DELETE 方法也 值得了解一下。
 
+### 2.2 验证
 
+有些 API 要求客户验证是为了计算 API 调用的费用，或者是提供了包月的服务。有些验证 是为了“限制”用户使用 API(限制每秒钟、每小时或每天 API 调用的次数)，或者是限制一部分用户对某种信息或某类 API 的访问。还有一些 API 可能不要求验证，但是可能会为了市场营销而跟踪用户的使用行为。
+
+通常 API 验证的方法都是用类似令牌(token)的方式调用，每次 API 调用都会把令牌传 递到服务器上。这种令牌要么是用户注册的时候分配给用户，要么就是在用户调用的时候 才提供，可能是长期固定的值，也可能是频繁变化的，通过服务器对用户名和密码的组合处理后生成。
+
+## 三、服务器响应
+
+大多数反馈的数据格式都是 XML 和 JSON。
+
+JSON 比 XML 更受欢迎，主要有两个原因。首先，JSON 文件比完整的 XML 格
+式小。比如下面的 XML 数据用了 98 个字符:
+
+```xml
+<user><firstname>Ryan</firstname><lastname>Mitchell</lastname><username>Kludgist</username></user>
+```
+
+同样的 JSON 格式数据:
+
+```json
+{"user":{"firstname":"Ryan","lastname":"Mitchell","username":"Kludgist"}}
+```
+
+只要用 73 个字符，比表述同样内容的 XML 文件要小 36%。
 
 
 
