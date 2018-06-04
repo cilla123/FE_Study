@@ -26,13 +26,13 @@
 
 在你的 nginx 安装目录的 conf 目录下找到 `nginx.conf` 文件，然后配置如下
 
-![购买服务器image](/Users/ben/Documents/source/FE_Study/运维/前端/assets/36682555-5be6240c-1b56-11e8-935a-fc4c9265549a.png)
+![image](assets/36682555-5be6240c-1b56-11e8-935a-fc4c9265549a-20180604094310869.png)
 
 注意红框部分，就是你要配置的内容，`proxy_pass` 表示你所有访问 `你的域名/music/` 的请求都代理到 `127.0.0.1:9000` 上了。还记得我们刚才起的 node 服务吗，这里的端口号要对上，对于我这个例子而言，请求 `http://ustbhuangyi.com/music/` 全部代理到我的 node 服务，所以就可以打开页面了。ngnix 配置完成记得保存，然后在命令行运行 `nginx -s reload` 重启 nginx 服务。
 
 如果你想配置多个项目，就配置不同的 `location` 代理到不同的端口即可。比如我的虚拟机同时运行了饿了么课程的项目，配置如下：
 
-![image](/Users/ben/Documents/source/FE_Study/运维/前端/assets/36684063-415417f8-1b5a-11e8-97a9-d6f9caa07136.png)
+![image](assets/36684063-415417f8-1b5a-11e8-97a9-d6f9caa07136-20180604094335740.png)
 
 
 
