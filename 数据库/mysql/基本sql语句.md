@@ -85,6 +85,48 @@ DELETE FROM 表名 where id=1;
 
 
 
+## 四、数据查询语言（DRL）
+
+数据查询语言（Data Retrieval Language — DRL）：SELECT 语句
+
+以下示例讲解查询语句的使用：
+
+```shell
+# 1.查询所有老师信息
+select username, id, phone, create_time from teacher;
+
+# 2.在没有表被引用的情况下，允许您指定DUAL作为一个假的表名
+select 1+1 from dual;
+
+# 3.查询ID为1的老师信息
+select * from teacher where id='1';
+
+# 4.查询职业为1的老师信息
+select * from teacher where job is null;
+select * from teacher where job is not null;
+
+# 5.使用别名查询ID为1的老师的姓名和性别
+select name, sex from teacher where id='1';
+
+# 6.查询性别为女和指定日期的老师信息
+select * from teacher where sex='f' and create_time='1234567891234';
+
+# 7.查询ID大于5的学生
+select * from student where id>5;
+
+# 8.查询性别为男或者ID小于5的老师
+select * from student where id<5;
+
+# 9.查询姓名的最后一个字符为“S”的老师
+select * from teacher where name like '%S';
+
+# 10.查询姓名以指定字符开头的老师
+select * from teacher where name like 'p%';
+
+# 11.查询姓名中包含“w”的老师
+select * from teacher where name like '%w%';
+```
+
 
 
 
