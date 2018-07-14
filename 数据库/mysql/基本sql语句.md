@@ -125,6 +125,29 @@ select * from teacher where name like 'p%';
 
 # 11.查询姓名中包含“w”的老师
 select * from teacher where name like '%w%';
+
+# 12.查询所有老师信息，并按日期降序排序（ORDER BY，默认为升序：ASC，降序：DESC）
+select name, create_time from teacher order by create_time;
+select name, create_time from teacher order by create_time desc;
+
+# 13.多个排序条件：当第一个条件相同时，以第二个条件排序
+select name, create_time from teacher order by create_time desc, age desc;
+select name, create_time from teacher order by create_time desc, age;
+
+# 14.按性别分组查询男女老师的人数（GROUP BY）
+select gender,count(gender) from teacher group by gender;
+
+# 15.按性别分组，查询出女老师人数的总数
+select gender,count(gender) from teacher group by gender having gender='m';
+select gender,count(gender) from teacher where gender='m';	// 效率比上面的高
+
+# 16.查询表的总记录数
+select count(*) from teacher;
+select count(id) from teacher;
+select count(id) as user_counts from teacher;
+
+# 17.查询老师记录的前三条（从0位置开始找出3条）
+select * from teacher limit 0,3;
 ```
 
 
