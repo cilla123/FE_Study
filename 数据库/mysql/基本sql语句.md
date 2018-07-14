@@ -152,6 +152,36 @@ select * from teacher limit 0,3;
 
 
 
+## 五、事务控制语言（TCL）
+
+事务控制语言（Transaction Control Language — TCL）
+
+如COMMIT、ROLLBACK等语句
+
+事务（Transaction）是访问并可能更新数据库中的各种数据项的一个程序执行单元（unit）
+
+在关系型数据库中，一个事务可以是一条sql语句，一组sql语句或整个程序。
+
+事务应该有4个属性：
+
+原子性（atomicity）、一致性（consistency）、隔离性（isolation）、持续性（durability）
+
+```shell
+# 设置默认事务提交方式
+set autocommit=false - 设置事务提交方式为"手动提交"
+set autocommit=true - 设置事务提交方式为"自动提交"
+
+# 事务就是对数据库的多步操作，要么一起成功，要么一起失败
+commit: 手动提交事务
+rollback: 回滚事务
+savepoint ponit2: 保存还原点
+rollback to point2: 回滚到point2还原点
+```
+
+
+
+
+
 
 
 
