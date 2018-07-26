@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit">
+  <title>audio和video兼容</title>
+  <script src="./js/vconsole.min.js"></script>
+  <script>
+    var vConsole = new VConsole();
+  </script>
+</head>
+<body>
+
+  <div class="audio-dom">
+
+  </div>
+  <button type="button" id="play-audio">播放</button>
+
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="./js/audio.min.js"></script> -->
+  <script src="./js/sound.js"></script>
+  <script>
+    // http://p3x93hhiy.bkt.clouddn.com/bgm.mp3
+    // http://ox1aby0ox.bkt.clouddn.com/H&H%20Group%20Video%20Audio%20File.mp3
+    ;(function(){
+
+      function getMP3Url() {
+        var url = 'http://p3x93hhiy.bkt.clouddn.com/bgm.mp3'
+        var xhr = new XMLHttpRequest()
+        xhr.open('get', url, true)
+        xhr.responseType = 'arraybuffer'
+        xhr.onload = function () {
+          if (xhr.status === 200 || xhr.status === 304) {
+            // 将后台 buffer 转换为 blob
+            var blob = new Blob([xhr.response], { type: 'audio/amr' })
+            // 创建blob链接
+            var srcBlob = URL.createObjectURL(blob)
+            // var sound = new Howl({
+            //   src: [srcBlob],
+            //   ext: ['mp3'],
+            //   html5: true,
+            //   onload: function(){
+            //     console.log('====================================');
+            //     console.log("load");
+            //     console.log('====================================');
+            //   }
+            // });
+            // sound.once('load', function(){
+            //   console.log('====================================');
+            //   console.log("!@#!@#");
+            //   console.log('====================================');
+            // });
+
+            // var srcBlob = webkitURL.createObjectURL(blob)
+
+            var audio = new Audio(srcBlob)
+
+            audio.addEventListener('loadstart', function () {
+              console.log('loadstart');
+            });
+            audio.addEventListener("error", function (error) {
+              console.log(error);
+            });
+            audio.addEventListener('canplay', function(){
+              console.log(audio.duration)
+              $('.audio-dom').append('\
+                <audio class="audio">\
+                  <source src="'+ srcBlob + '"></source>\
+                  <source src="'+ srcBlob +'" type="audio/ogg">\
+                  <source src = "'+ srcBlob +'" type = "audio/mpeg" >\
+                </audio>'+ audio.duration + '秒'
+              )
+            })
+          }
+        }
+        xhr.send()
+        return ''
+      }
+
+      getMP3Url()
+
+      $('#play-audio').click(function(){
+        var dom = $('.audio')[0]
+        dom.play()
+      })
+
+    })()  
+  </script>
+</body>
+</html>
