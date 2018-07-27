@@ -32,9 +32,9 @@ contract CrowdFunding {
     }
 
     // 统计运动员(被赞助人)数量
-    uint numCampaigns;
+    uint public numCampaigns;
     // 以键值对的形式存储被赞助人的信息
-    mapping (uint => Campaign) campaigns;
+    mapping (uint => Campaign) public campaigns;
 
     /**
      * 新增一个`Campaign`对象，需要传入受益人的地址和需要筹资的总额
