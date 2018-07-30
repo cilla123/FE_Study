@@ -62,6 +62,7 @@ contract CrowdFunding {
             addr: msg.sender,
             amount: msg.value
         });
+        // 计算收到的总额
         c.amount += msg.value;
         c.beneficiary.transfer(msg.value);
     }
