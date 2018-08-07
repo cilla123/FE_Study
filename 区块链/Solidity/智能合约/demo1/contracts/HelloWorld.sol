@@ -6,4 +6,8 @@ contract HelloWorld {
         return "HelloWorld";
     }
 
+    function test2() public returns (string) {
+        return "HelloWorld";
+    }
+
 }

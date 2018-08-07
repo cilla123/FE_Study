@@ -14,22 +14,36 @@
       "payable": false,
       "stateMutability": "pure",
       "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "test2",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5061013f806100206000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f8a8fd6d14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600a81526020017f48656c6c6f576f726c64000000000000000000000000000000000000000000008152509050905600a165627a7a72305820e52b56ce9b9c4e119ff6f8441787c1f002aa36ba099b855f1961e5040c2dc6d70029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f8a8fd6d14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600a81526020017f48656c6c6f576f726c64000000000000000000000000000000000000000000008152509050905600a165627a7a72305820e52b56ce9b9c4e119ff6f8441787c1f002aa36ba099b855f1961e5040c2dc6d70029",
-  "sourceMap": "26:111:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:111:0;;;;;;;",
-  "deployedSourceMap": "26:111:0:-;;;;;;;;;;;;;;;;;;;;;;;;53:81;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:81:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;53:81:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;90:6;108:19;;;;;;;;;;;;;;;;;;;;53:81;:::o",
-  "source": "pragma solidity ^0.4.23;\n\ncontract HelloWorld {\n\n    function test() public pure returns (string) {\n        return \"HelloWorld\";\n    }\n\n}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610217806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806366e41cb714610051578063f8a8fd6d146100e1575b600080fd5b34801561005d57600080fd5b50610066610171565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100a657808201518184015260208101905061008b565b50505050905090810190601f1680156100d35780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100ed57600080fd5b506100f66101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561013657808201518184015260208101905061011b565b50505050905090810190601f1680156101635780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600a81526020017f48656c6c6f576f726c6400000000000000000000000000000000000000000000815250905090565b60606040805190810160405280600a81526020017f48656c6c6f576f726c64000000000000000000000000000000000000000000008152509050905600a165627a7a72305820ca77556e9cb8be4fa0bbd7c8b09ecf271c74b591f2ad0d7a7a3b1cb94bc0c74e0029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806366e41cb714610051578063f8a8fd6d146100e1575b600080fd5b34801561005d57600080fd5b50610066610171565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100a657808201518184015260208101905061008b565b50505050905090810190601f1680156100d35780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100ed57600080fd5b506100f66101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561013657808201518184015260208101905061011b565b50505050905090810190601f1680156101635780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600a81526020017f48656c6c6f576f726c6400000000000000000000000000000000000000000000815250905090565b60606040805190810160405280600a81526020017f48656c6c6f576f726c64000000000000000000000000000000000000000000008152509050905600a165627a7a72305820ca77556e9cb8be4fa0bbd7c8b09ecf271c74b591f2ad0d7a7a3b1cb94bc0c74e0029",
+  "sourceMap": "26:194:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:194:0;;;;;;;",
+  "deployedSourceMap": "26:194:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;140:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:77:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;140:77:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;53:81;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:81:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;53:81:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;140:77;173:6;191:19;;;;;;;;;;;;;;;;;;;;140:77;:::o;53:81::-;90:6;108:19;;;;;;;;;;;;;;;;;;;;53:81;:::o",
+  "source": "pragma solidity ^0.4.23;\n\ncontract HelloWorld {\n\n    function test() public pure returns (string) {\n        return \"HelloWorld\";\n    }\n\n    function test2() public returns (string) {\n        return \"HelloWorld\";\n    }\n\n}",
   "sourcePath": "/Users/ben/Documents/source/FE_Study/区块链/Solidity/智能合约/demo1/contracts/HelloWorld.sol",
   "ast": {
     "absolutePath": "/Users/ben/Documents/source/FE_Study/区块链/Solidity/智能合约/demo1/contracts/HelloWorld.sol",
     "exportedSymbols": {
       "HelloWorld": [
-        10
+        18
       ]
     },
-    "id": 11,
+    "id": 19,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -49,9 +63,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10,
+        "id": 18,
         "linearizedBaseContracts": [
-          10
+          18
         ],
         "name": "HelloWorld",
         "nodeType": "ContractDefinition",
@@ -136,27 +150,113 @@
               ],
               "src": "89:8:0"
             },
-            "scope": 10,
+            "scope": 18,
             "src": "53:81:0",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 16,
+              "nodeType": "Block",
+              "src": "181:36:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "48656c6c6f576f726c64",
+                    "id": 14,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "198:12:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7c5ea36004851c764c44143b1dcb59679b11c9a68e5f41497f6cf3d480715331",
+                      "typeString": "literal_string \"HelloWorld\""
+                    },
+                    "value": "HelloWorld"
+                  },
+                  "functionReturnParameters": 13,
+                  "id": 15,
+                  "nodeType": "Return",
+                  "src": "191:19:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 17,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "test2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "154:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17,
+                  "src": "173:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 11,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "173:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "172:8:0"
+            },
+            "scope": 18,
+            "src": "140:77:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
           }
         ],
-        "scope": 11,
-        "src": "26:111:0"
+        "scope": 19,
+        "src": "26:194:0"
       }
     ],
-    "src": "0:137:0"
+    "src": "0:220:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/ben/Documents/source/FE_Study/区块链/Solidity/智能合约/demo1/contracts/HelloWorld.sol",
     "exportedSymbols": {
       "HelloWorld": [
-        10
+        18
       ]
     },
-    "id": 11,
+    "id": 19,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -176,9 +276,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10,
+        "id": 18,
         "linearizedBaseContracts": [
-          10
+          18
         ],
         "name": "HelloWorld",
         "nodeType": "ContractDefinition",
@@ -263,18 +363,104 @@
               ],
               "src": "89:8:0"
             },
-            "scope": 10,
+            "scope": 18,
             "src": "53:81:0",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 16,
+              "nodeType": "Block",
+              "src": "181:36:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "48656c6c6f576f726c64",
+                    "id": 14,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "198:12:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7c5ea36004851c764c44143b1dcb59679b11c9a68e5f41497f6cf3d480715331",
+                      "typeString": "literal_string \"HelloWorld\""
+                    },
+                    "value": "HelloWorld"
+                  },
+                  "functionReturnParameters": 13,
+                  "id": 15,
+                  "nodeType": "Return",
+                  "src": "191:19:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 17,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "test2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "154:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17,
+                  "src": "173:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 11,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "173:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "172:8:0"
+            },
+            "scope": 18,
+            "src": "140:77:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
           }
         ],
-        "scope": 11,
-        "src": "26:111:0"
+        "scope": 19,
+        "src": "26:194:0"
       }
     ],
-    "src": "0:137:0"
+    "src": "0:220:0"
   },
   "compiler": {
     "name": "solc",
@@ -289,5 +475,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-28T03:03:30.627Z"
+  "updatedAt": "2018-08-07T06:56:33.540Z"
 }
