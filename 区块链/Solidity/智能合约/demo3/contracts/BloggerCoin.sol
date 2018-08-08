@@ -13,6 +13,6 @@ contract BloggerCoin is StandardToken {
         balances[msg.sender] = INITIAL_SUPPLY;
     }
 
-    
+        
 
 }
