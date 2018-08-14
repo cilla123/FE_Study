@@ -1,0 +1,17 @@
+{
+  "name": "demo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Ben",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.1.6",
+    "mocha": "^5.2.0",
+    "solc": "^0.4.24",
+    "web3": "^1.0.0-beta.35"
+  }
+}
