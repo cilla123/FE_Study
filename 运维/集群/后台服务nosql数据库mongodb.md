@@ -35,12 +35,16 @@ dbpath=/root/data/program/software/mongodb/db
 logpath=/root/data/program/software/mongodb/logs/mongodb.log
 port=27017
 fork=true
+nohttpinterface=true
 ```
 
 三、分别三台服务器上启动mongodb
 
 ```shell
 /root/data/program/software/mongodb/bin/mongod --replSet repset -f /root/data/program/software/mongodb/bin/mongodb.conf
+
+# 假设用了kill -9则要用以下，然后再执行上面的命令
+/root/data/program/software/mongodb/bin/mongod --replSet repset -f /root/data/program/software/mongodb/bin/mongodb.conf --repair
 ```
 
 四、各个服务器查看，都已经启动
@@ -68,6 +72,21 @@ config={
 	_id: "repset",
 	members: [{_id:0, host:"10.221.55.7:27017"}, {_id:1, host:"10.221.55.8:27017"}, {_id:2, host:"10.221.55.9:27017"}]
 }
+```
+
+八、初始化副本集群 
+
+```shell
+rs.initiate(config);
+
+# 如果发现不行，则可能需要在阿里云里面设置安全组
+# https://ecs-cn-zhangjiakou.console.aliyun.com/#/server/region/cn-zhangjiakou
+```
+
+九、查看集群节点的状态 
+
+```shell
+rs.status();
 ```
 
 
