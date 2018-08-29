@@ -1,14 +1,8 @@
-# webpack4.0打包优化策略
+# webpack4.0打包优化策略(一)
 
 ## webpack4.0新特性
 
 [webpack4.0 新特性介绍](https://link.juejin.im/?target=http%3A%2F%2Fju.outofmemory.cn%2Fentry%2F343762)
-
-## 打包优化策略
-
-- [webpack4.0打包优化策略(一)](https://link.juejin.im/?target=https%3A%2F%2Fjuejin.im%2Fpost%2F5abbc2ca5188257ddb0fae9b)
-- [webpack4.0打包优化策略(二)](https://link.juejin.im/?target=https%3A%2F%2Fjuejin.im%2Fpost%2F5ac769e7f265da237b225490)
-- [webpack4.0打包优化策略(三)](https://link.juejin.im/?target=https%3A%2F%2Fjuejin.im%2Fpost%2F5ac76a8f51882555677ecc06)
 
 ## 当前依赖包的版本
 
