@@ -35,3 +35,46 @@ mysql -u root
 select user_host_password from mysql_user
 ```
 
+四、忘记密码，或设置密码
+
+```shell
+修改MySQL的登录设置： 
+# vim /etc/my.cnf
+在[mysqld]的段中加上一句：skip-grant-tables
+例如：
+[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+skip-grant-tables
+保存并且退出vi。
+
+重新启动mysqld 
+# service mysqld restart
+Stopping MySQL: [ OK ]
+Starting MySQL: [ OK ]
+
+登录并修改MySQL的root密码 
+# mysql
+Welcome to the MySQL monitor. Commands end with ; or \g.
+Your MySQL connection id is 3 to server version: 3.23.56
+Type ‘help;’ or ‘\h’ for help. Type ‘\c’ to clear the buffer.
+mysql> USE mysql ;
+Database changed
+mysql> UPDATE user SET Password = password ( ‘new-password’ ) WHERE User = ‘root’ ;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 2 Changed: 0 Warnings: 0
+mysql> flush privileges ;
+Query OK, 0 rows affected (0.01 sec)
+mysql> quit
+
+将MySQL的登录设置修改回来 
+# vim /etc/my.cnf
+将刚才在[mysqld]的段中加上的skip-grant-tables删除
+保存并且退出vim
+
+重新启动mysqld 
+# service mysqld restart
+Stopping MySQL: [ OK ]
+Starting MySQL: [ OK ]
+```
+
